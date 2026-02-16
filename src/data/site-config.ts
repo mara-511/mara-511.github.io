@@ -37,11 +37,7 @@ const siteConfig: SiteConfig = {
         {
             text: 'Contacto',
             href: '/contact'
-        },
-        {
-            text: 'Terminos',
-            href: '/terms'
-        },
+        }
        
     ],
     socialLinks: [
