@@ -1,25 +1,32 @@
 ---
-import type { GetStaticPathsOptions, Page } from 'astro';
-import { type CollectionEntry, getCollection } from 'astro:content';
-import Pagination from '../../components/Pagination.astro';
-import ProjectPreview from '../../components/ProjectPreview.astro';
-import siteConfig from '../../data/site-config';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { sortItemsByDateDesc } from '../../utils/data-utils';
-
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
-    return paginate(projects, { pageSize: siteConfig.projectsPerPage || 6 });
-}
-
-type Props = { page: Page<CollectionEntry<'projects'>> };
-
-const { page } = Astro.props;
-const portfolio = page.data;
 ---
 
-<BaseLayout title="Portfolio" description="Explore a diverse portfolio showcasing my passion and expertise" showHeader={false}>
-    <h1 class="mb-12 font-serif text-2xl leading-tight italic sm:mb-16 sm:text-4xl">Video de presentación</h1>
-    {portfolio.map((project) => <ProjectPreview project={project} class="mb-10 sm:mb-12" />)}
-    <Pagination page={page} class="my-16 sm:my-24" />
+<BaseLayout 
+    title="Video de presentación" 
+    description="Mira mi video de presentación"
+    showHeader={false}
+>
+    <h1 class="mb-12 font-serif text-2xl leading-tight italic sm:mb-16 sm:text-4xl">
+        Video de presentación
+    </h1>
+
+    <div class="aspect-video w-full max-w-4xl mx-auto">
+        <!-- OPCIÓN YOUTUBE -->
+        <iframe 
+            class="w-full h-full rounded-xl"
+            src="https://www.youtube.com/watch?v=wxp3xSkbVRU"
+            title="Video de presentación"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+
+        <!-- OPCIÓN VIDEO LOCAL (usa esta si el video está en /public) -->
+        <!--
+        <video controls class="w-full rounded-xl">
+            <source src="/video-presentacion.mp4" type="video/mp4" />
+            Tu navegador no soporta video HTML5.
+        </video>
+        -->
+    </div>
 </BaseLayout>
