@@ -1,9 +1,10 @@
 ---
+import type { Page } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout 
-    title="Video de presentación" 
+    title="Video de presentación"
     description="Mira mi video de presentación"
     showHeader={false}
 >
@@ -12,16 +13,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </h1>
 
     <div class="aspect-video w-full max-w-4xl mx-auto">
-        <!-- OPCIÓN YOUTUBE -->
+        <!-- Opción YouTube -->
         <iframe 
             class="w-full h-full rounded-xl"
-            src="https://www.youtube.com/watch?v=wxp3xSkbVRU"
+            src="https://www.youtube.com/embed/ErjGjgHGDO4"
             title="Video de presentación"
             frameborder="0"
             allowfullscreen>
         </iframe>
 
-        <!-- OPCIÓN VIDEO LOCAL (usa esta si el video está en /public) -->
+        <!-- Opción video local -->
         <!--
         <video controls class="w-full rounded-xl">
             <source src="/video-presentacion.mp4" type="video/mp4" />
