@@ -1,14 +1,14 @@
 ---
-title: Get in touch
+title: Para poderme contactar
 seo:
   title: Contact
   description: Get in touch through email or social media! Let me know how I can help.
 ---
 
-Thank you for reaching out! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:
+En caso de tener un trabajo, una idea o cualquier cosa en la que pueda colaborar sientete libre de comunicarte a cualquiera de los siguientes sitios:
 
 _Email:_
-Feel free to drop me an email at [example@example.com](mailto:example@example.com), and I'll do my best to respond as soon as possible.
+Sientete libre de mandarme un email a [maju514117@gmail.com](mailto:maju514117@gmail.com), y haré lo posible por responder rapidamente.
 
-_Social Media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com) or [LinkedIn](https://www.linkedin.com/).
+_Redes sociales:_
+Conecta conmigo por medio de redes sociales. Me puedes encontrar en [Instagram](https://www.instagram.com/_mara.511/) or [LinkedIn](https://www.linkedin.com/in/mariana-pineda-melo-844343249/).

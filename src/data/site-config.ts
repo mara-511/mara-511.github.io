@@ -66,12 +66,7 @@ const siteConfig: SiteConfig = {
             src: hero,
             alt: 'A image about me created by ChatGPT'
         },
-        actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
-        ]
+       
     },
     subscribe: {
         enabled: true,
