@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import avatar from '../../images/avatar.jpg';
 ---
 
 <BaseLayout 
@@ -8,7 +10,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     pageType="article"
     showHeader={false}
 >
-    <article class="mb-16 sm:mb-24">
+    <article class="mb-16 sm:mb-24 text-center">
+        
+        <!-- Avatar -->
+        <div class="flex justify-center mb-6">
+            <Image 
+                src={avatar}
+                alt="Foto de perfil"
+                width={80}
+                height={80}
+                class="rounded-full shadow-lg border-2 border-neutral-200"
+            />
+        </div>
+
         <header class="mb-8">
             <h1 class="font-serif text-3xl leading-tight font-medium sm:text-5xl">
                 Video de presentación
@@ -18,11 +32,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="aspect-video w-full max-w-4xl mx-auto">
             <iframe 
                 class="w-full h-full rounded-xl"
-                src="https://www.youtube.com/embed/WCbJRreVrxo
+                src="https://www.youtube.com/embed/WCbJRreVrxo"
                 title="Video de presentación"
                 frameborder="0"
                 allowfullscreen>
             </iframe>
         </div>
+
     </article>
 </BaseLayout>
