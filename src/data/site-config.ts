@@ -56,21 +56,13 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        title: 'Hola a todos y bienvenidos a mi primer blog y portafolio web!',
+        title: '¡Hola a todos y bienvenidos a mi primer blog y portafolio web!',
         text: "Soy **Mariana Pineda**, una ingeniera de sistemas en proceso de formación en la Universidad el Bosque, soy programadora competitiva con un conocimiento alto en Java, un conocimiento medio en c++ y un conocimiento basico en Python.\nPoseo habilidades analíticas y tecnológicas ademas de la honestidad, la persistencia, el trabajo en equipo y el liderazgo.\nA parte tengo grandes pasiones y hobbies como lo son cantar, tocar piano, dibujar y armar.",
         image: {
             src: hero,
             alt: 'A image about me created by ChatGPT'
         },
        
-    },
-    subscribe: {
-        enabled: false,
-        title: 'Subscribe to Dante Newsletter',
-        text: 'One update per week. All the latest posts directly in your inbox.',
-        form: {
-            action: '#'
-        }
     },
     postsPerPage: 8,
     projectsPerPage: 8
